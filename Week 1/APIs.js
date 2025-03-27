@@ -17,8 +17,24 @@ findIndexOf("hello world  world world worl", "world"); //indexing starts from 0
 
 // to find last index of the word in a string we use predefined function lastIndexOf
 
-// getSlice function is used to get the substring from the string
 
+// Slice function is used to get the substring from the string
 function getSlice(str, start, end){
-    
+    console.log("Original String:", str);
+    console.log("After Slice:", str.slice(start, end));
+}
+
+getSlice("hello world", 0, 4); //indexing starts from 0
+//the start index is inclusive and the end index is exclusive
+//the difference between slice and substring is that slice can take negative values as well
+//the negative values are counted from the end of the string
+// the major difference between slice & substr is in slice counting starts from 0 and in substr counting starts from 1
+// slice(0,4) will return "hell" 
+//substr(0,4) will return "hell"
+
+function cutIt(str, startIndex, endIndex){
+    let newStr = "";
+    for(let i =0; i<str.length; i++){
+        if()
+    }
 }
