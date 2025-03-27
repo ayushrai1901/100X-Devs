@@ -73,3 +73,12 @@ function sub(a,b){
 
 const value =  calculateArithmetic(1,2,"sum");
 console.log(value);
+
+//passing fuctions as arguments is also called as callback functions
+// a callback function is a function that is passed as an argument to another function and is executed after some operation has been completed
+
+function greet(){
+    console.log("Hello");
+}
+
+setTimeout(greet, 3*1000); //here greet is a callback function
