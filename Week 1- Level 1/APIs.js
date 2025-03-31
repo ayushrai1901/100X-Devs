@@ -32,9 +32,33 @@ getSlice("hello world", 0, 4); //indexing starts from 0
 // slice(0,4) will return "hell" 
 //substr(0,4) will return "hell"
 
-function cutIt(str, startIndex, endIndex){
+/*function cutIt(str, startIndex, endIndex){
     let newStr = "";
     for(let i =0; i<str.length; i++){
         if()
     }
-}
+}*/
+
+// split function is used to split the string into an array of strings
+
+const value = "ayush kumar rai frontend developer"
+const splitValue = value.split("");
+console.log(splitValue); //it will split the string into an array of strings
+
+
+const value1 = "               Ayush Kumar rAi          ";
+const trimeValue = value1.trim(); //it will remove the spaces from the start and end of the string
+console.log(trimeValue); //it will remove the spaces from the start and end of the string
+
+//it will not remove the spaces from the middle of the string
+
+//toUpper & toLower function is used to convert the string to upper case and lower case respectively
+
+const value2 = "ayush kumar rai frontend developer";
+const upperValue = value2.toUpperCase(); //it will convert the string to upper case
+console.log(upperValue); //it will convert the string to upper case
+
+const lowerValue = value1.toLowerCase(); //it will convert the string to lower case
+console.log(lowerValue); //it will convert the string to lower case
+
+//we are printing the value1 without triming it & then the spaces is coming in the output
