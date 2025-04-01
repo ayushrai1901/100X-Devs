@@ -1,14 +1,17 @@
-const array = [2, 3, 4, 5, 6, 7, 8, 9, 10];
-array.unshift(1); 
-//for (let i=0; i<array.length; i++){
- //   console.log(array[i]); //it will print the values of the array one by one
-// }
-
-//sol 2 using forEach method
-function logThings(str){
-    console.log(str); //it will print the values of the array one by one
+function cube(n){
+    return n*n*n;
 }
 
-//[1,2,3]
+/*function sumOfCubes(a,b){
+    const val1 = cube(a);
+    const val2 =cube(b);
+    return val1 +val2;
+}*/
 
-array.forEach(logThings); //it will print the values of the array one by one
+function sumOfSomething(a,b,fn){
+    const val1 = fn(a);
+    const val2 = fn(b);
+
+    return val1+val2;
+}
+console.log("The sum of cubes of two numbers is: " + sumOfSomething(2,2, cube));
