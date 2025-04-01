@@ -1,0 +1,1 @@
+console.log(dog1); //output: Animal { name: 'jennie', legCount: 4, speaks: 'woof woof' }
